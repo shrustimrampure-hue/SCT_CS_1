@@ -13,7 +13,7 @@ Decryption is handled efficiently by applying a negative key shift, effectively 
 Decryption Key = - Encryption Key
 # Modular Arithmetic (Wraparound):
 The most critical feature is the correct handling of the alphabet's beginning and end. The program ensures that:
-• Shifting past 'z' wraps back to 'a'.
+• Shifting past 'z' wraps back to 'a'. 
 • Shifting before 'a' wraps back to 'z'.
 # Non-Alphabetic Preservation: 
 Any characters that are not letters (like spaces, numbers, or punctuation) are left untouched in the output.
