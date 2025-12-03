@@ -13,6 +13,7 @@ Decryption is handled efficiently by applying a negative key shift, effectively 
 Decryption Key = - Encryption Key
 # Modular Arithmetic (Wraparound):
 The most critical feature is the correct handling of the alphabet's beginning and end. The program ensures that:
+
 • Shifting past 'z' wraps back to 'a'. 
 
 • Shifting before 'a' wraps back to 'z'.
@@ -26,7 +27,9 @@ This project, developed as part of Skillcraft Technology, reinforced several key
 
 # 🎯 Key Technical Learnings
 # 1. Algorithmic Indexing and Retrieval:
+
 • Learned how to use indexing methods to convert a character (like 'a') into a numerical position (like 0) and vice-versa, which is fundamental to substitution ciphers.
+
 • Understood how to identify and handle non-alphabetic characters by checking for    non-existent indices.
 # 2. Advanced Conditional Logic and Modulo Simulation:
 • Mastered the use of complex if/elif blocks to manage the program's primary mode (encryption vs. decryption) and, most importantly, to implement the wraparound logic. This logic mimics the mathematical modulo operation ((mod 26))to ensure the resulting index always falls within the valid range of the 26-letter alphabet.
@@ -44,5 +47,7 @@ Run the script file (e.g., caesar_cipher.py) using your system's Python interpre
 # 3. Interaction: 
 The program will prompt you to:
 • Select the mode: e (encrypt) or d (decrypt).
+
 • Enter the key (a number from 1 to 26).
+
 • Provide the text to be processed.
